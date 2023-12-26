@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:resume_website/extensions/context_extension.dart';
 
-class ProfilePicture extends StatelessWidget {
-  const ProfilePicture({super.key});
+class PictureW extends StatelessWidget {
+  final String _imagePath;
+  final double _imageWidthPercent;
+  const PictureW({super.key,required String imagePath,
+  required double imageWidthPercent
+  }): _imagePath = imagePath,
+  _imageWidthPercent = imageWidthPercent
+  ;
 
   @override
   Widget build(BuildContext context) {
@@ -15,8 +21,8 @@ class ProfilePicture extends StatelessWidget {
     //           fit: BoxFit.contain
     //   )),
     // );
-    return Image.asset('assets/vikash_without_background.png',
-    width: context.width*.50,
+    return Image.asset('assets/$_imagePath',
+    width: context.width*_imageWidthPercent,
     );
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:resume_website/extensions/context_extension.dart';
+import 'package:resume_website/features/about_us/presentation/widgets/about_us_w.dart';
 import 'package:resume_website/features/home/presentation/widgets/self_intro_w.dart';
 import 'package:resume_website/features/home/presentation/widgets/working_experiance_w.dart';
 import 'package:resume_website/features/portfolio/presentation/screens/portfolio_screen.dart';
@@ -37,6 +38,7 @@ class _ResumePageState extends State<HomeS> {
               SizedBox(
                 height: 100,
               ),
+              /// upper section
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -48,9 +50,15 @@ class _ResumePageState extends State<HomeS> {
                     WorkingExperienceW()
                   ],
                 ),
-                ProfilePicture(),
+                PictureW(
+                  imagePath: 'vikash_without_background.png',
+                  imageWidthPercent: .5,
+                ),
                 // WorkingExperienceW()
               ],),
+
+              /// about us section
+              AboutUsW()
 
             ],
           ),

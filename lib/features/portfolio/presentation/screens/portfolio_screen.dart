@@ -20,9 +20,9 @@ class PortfolioScreen extends StatelessWidget {
                     child: const Placeholder(
                       child: Text("Header Details"),
                     ))),
-            const Expanded(
-              child: ProfilePicture(),
-            ),
+            // const Expanded(
+            //   child: PictureW(),
+            // ),
           ],
         )
       ],
