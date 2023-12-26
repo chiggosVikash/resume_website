@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:resume_website/screens/resume_page/resume_page.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:resume_website/features/home/presentation/screens/home_s.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(const MyApp());
+  runApp(const ProviderScope(child: MyApp(),));
 }
 
 class MyApp extends StatelessWidget {
@@ -15,10 +16,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'Vikash Kumar',
         debugShowCheckedModeBanner: false,
+        themeMode: ThemeMode.dark,
+        darkTheme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue,brightness: Brightness.dark),
+          useMaterial3: true,
+        ),
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const ResumePage());
+        home: const HomeS());
   }
 }
