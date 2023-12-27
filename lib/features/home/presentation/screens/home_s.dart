@@ -3,6 +3,7 @@ import 'package:resume_website/extensions/context_extension.dart';
 import 'package:resume_website/features/about_us/presentation/widgets/about_us_w.dart';
 import 'package:resume_website/features/home/presentation/widgets/self_intro_w.dart';
 import 'package:resume_website/features/home/presentation/widgets/working_experiance_w.dart';
+import 'package:resume_website/features/popuar_services/presentation/widgets/popular_services_w.dart';
 import 'package:resume_website/features/portfolio/presentation/screens/portfolio_screen.dart';
 import 'package:resume_website/features/portfolio/presentation/widgets/menus_w.dart';
 import 'package:resume_website/features/portfolio/presentation/widgets/profile_picture.dart';
@@ -59,7 +60,10 @@ class _ResumePageState extends State<HomeS> {
 
               SizedBox(height: context.height*.1,),
               /// about us section
-              const AboutUsW()
+              const AboutUsW(),
+              SizedBox(height: context.height*.1,),
+              /// popular services
+              const PopularServicesW(),
 
             ],
           ),
