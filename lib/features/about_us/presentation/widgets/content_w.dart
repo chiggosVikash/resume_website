@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:resume_website/extensions/context_extension.dart';
+import 'package:resume_website/features/about_us/presentation/widgets/email_phone_w.dart';
 import 'package:resume_website/features/about_us/presentation/widgets/service_tag_w.dart';
 
 class ContentW extends StatelessWidget {
@@ -25,19 +26,29 @@ class ContentW extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Row(
+            Padding(
+              padding: const EdgeInsets.only(left:18.0),
+              child: Row(
 
-              children: [
-              const ServiceTagW(tagName: "Android App"),
-              SizedBox(width:context.width*.05),
-              const ServiceTagW(tagName: "iOS App"),
-            ],),
+                children: [
+                const ServiceTagW(tagName: "Android App"),
+                SizedBox(width:context.width*.05),
+                const ServiceTagW(tagName: "iOS App"),
+              ],),
+            ),
             const SizedBox(height: 30,),
-            Row(children: [
-              const ServiceTagW(tagName: "Web App"),
-              SizedBox(width:context.width*.07),
-              const ServiceTagW(tagName: "Backend"),
-            ],)
+            Padding(
+              padding: const EdgeInsets.only(left:18.0),
+              child: Row(children: [
+                const ServiceTagW(tagName: "Web App"),
+                SizedBox(width:context.width*.07),
+                const ServiceTagW(tagName: "Backend"),
+              ],),
+            ),
+
+            /// email phone widget
+            const SizedBox(height: 30,),
+            const EmailPhoneW()
 
 
 

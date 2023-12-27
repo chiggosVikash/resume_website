@@ -29,17 +29,17 @@ class _ResumePageState extends State<HomeS> {
 
      ),
 
-      body: const Padding(
-        padding: EdgeInsets.all(8.0),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
         child: SingleChildScrollView(
           child: Column(
             children: [
               // PortfolioScreen(), Text("Hello world"),
-              SizedBox(
-                height: 100,
-              ),
+              // SizedBox(
+              //   height: 100,
+              // ),
               /// upper section
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                 Column(
@@ -57,8 +57,9 @@ class _ResumePageState extends State<HomeS> {
                 // WorkingExperienceW()
               ],),
 
+              SizedBox(height: context.height*.1,),
               /// about us section
-              AboutUsW()
+              const AboutUsW()
 
             ],
           ),
