@@ -23,22 +23,19 @@ class PopularServicesW extends StatelessWidget {
           ServiceTileW(
             serviceNo: 1,
             serviceTitle: "Android Application Development",
-            serviceDes: "",
           ),
             ServiceTileW(
               serviceNo: 2,
               serviceTitle: "IOS Application Development",
-              serviceDes: "",
             ),
             ServiceTileW(serviceNo: 3, serviceTitle: 'Web Application Development',
-              serviceDes: "",
+
             ),
             ServiceTileW(serviceNo: 4,
             serviceTitle: "Api Development",
-              serviceDes: "",
             ),
-            ServiceTileW(serviceNo: 5, serviceTitle: "Website Development", serviceDes: ""),
-            ServiceTileW(serviceNo: 6, serviceTitle: "UI/UX Development", serviceDes: "")
+            ServiceTileW(serviceNo: 5, serviceTitle: "Website Development",),
+            ServiceTileW(serviceNo: 6, serviceTitle: "UI/UX Development",)
         ],)
 
     ],);

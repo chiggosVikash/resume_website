@@ -67,6 +67,13 @@ flutter:
     - assets/vikash_pic.jpg
     - assets/vikash_pic.png
     - assets/vikash_without_background.png
+    - assets/firebase.png
+    - assets/flutter.png
+    - assets/java.png
+    - assets/javascript.png
+    - assets/mongodb.png
+    - assets/github.png
+    - assets/nodejs.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

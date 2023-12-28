@@ -5,11 +5,11 @@ import 'package:resume_website/extensions/context_extension.dart';
 class ServiceTileW extends StatelessWidget {
   final int _serviceNo;
   final String _serviceTitle;
-  final String _serviceDes;
+  final String? _serviceDes;
 
   const ServiceTileW({super.key,required int serviceNo,
     required String serviceTitle,
-    required String serviceDes})
+    String? serviceDes})
       : _serviceNo = serviceNo,
         _serviceTitle = serviceTitle,
         _serviceDes = serviceDes
@@ -25,7 +25,7 @@ class ServiceTileW extends StatelessWidget {
           child: ListTile(
             style: ListTileStyle.list,
             title: Text(_serviceTitle),
-            subtitle: Text(_serviceDes),
+            subtitle: _serviceDes == null ? null :Text(_serviceDes!),
             trailing: const Icon(Icons.add_circle),
             leading: CircleAvatar(child: Text("$_serviceNo"),
             ),
