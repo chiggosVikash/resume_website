@@ -6,5 +6,5 @@ extension BuildContextExtension on BuildContext {
   double get aspectRation => MediaQuery.of(this).size.aspectRatio;
   ThemeData get theme => Theme.of(this);
 
-  bool get isMobileSize => MediaQuery.of(this).size.width < 600;
+  bool get isMobileSize => MediaQuery.of(this).size.width < 700;
 }

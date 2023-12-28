@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:resume_website/extensions/context_extension.dart';
 import 'package:resume_website/features/about_us/presentation/widgets/about_us_w.dart';
+import 'package:resume_website/features/home/presentation/widgets/drawer_w.dart';
 import 'package:resume_website/features/home/presentation/widgets/self_intro_w.dart';
 import 'package:resume_website/features/home/presentation/widgets/working_experiance_w.dart';
 import 'package:resume_website/features/my_skills/presentation/widgets/my_skills_w.dart';
@@ -21,13 +22,14 @@ class _ResumePageState extends State<HomeS> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: context.isMobileSize ? const DrawerW():null,
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: const Icon(Icons.arrow_upward),
       ),
      appBar: AppBar(
        title: const Text("Vikash Kumar"),
-       actions: const [MenusW()],
+       actions: context.isMobileSize ?  [] : const [MenusW()],
 
      ),
 

@@ -7,7 +7,7 @@ class ContentW extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: context.width * .35,
+      width: context.width * .45,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -17,7 +17,19 @@ class ContentW extends StatelessWidget {
         /// heading of the section
           Text("Let's Explore Popular \n    Skills of Mine",style: context.theme.textTheme.headlineLarge,),
           SizedBox(height: context.height * .04,),
-          const Text("I am a professional Flutter Developer. \nI have 2 years of experience in Flutter Development. \nI have developed many applications in Flutter")
+        const Text("### Skills"),
+        SizedBox(height: context.height*.02,),
+        const Text("Programming Languages: Dart, Javascript, c, c++ , java , rust , python. "),
+          SizedBox(height: context.height*.01,),
+        const Text("Frameworks: Flutter, Node.js (Express.js) Unity. "),
+          SizedBox(height: context.height*.01,),
+        const Text("Database: MongoDB, Firebase, MySql. "),
+          SizedBox(height: context.height*.01,),
+        const Text("Version Control: Git, Github. "),
+          SizedBox(height: context.height*.01,),
+        const Text("Web Technologies: HTML, Flutter , Dart. "),
+          SizedBox(height: context.height*.01,),
+        const Text("Development Tools: Visual Studio Code, Android Studio , Intellij IDEA.")
 
       ],),
     );
